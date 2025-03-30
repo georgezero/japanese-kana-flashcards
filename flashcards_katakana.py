@@ -108,6 +108,7 @@ def flashcard_app(stdscr):
     index = 0  # Keeps track of the current flashcard
     show_romaji = False  # Initially, romaji is hidden
     show_katakana_first = True  # Initially show Katakana first
+    total = len(katakana_list)
 
     while True:
         stdscr.clear()
@@ -137,12 +138,15 @@ def flashcard_app(stdscr):
             else:
                 stdscr.addstr(7, 10, "Katakana: ", curses.A_DIM)
 
+        # Flashcard counter
+        stdscr.addstr(10, 10, f"Card {index + 1} of {total}")
+
         # Instructions
-        stdscr.addstr(10, 10, "Press any key to reveal answer.")
-        stdscr.addstr(11, 10, "Press any key again for next card.")
-        stdscr.addstr(12, 10, "Press 'P' to go back.")
-        stdscr.addstr(13, 10, "Press 'M' to toggle Katakana/Romaji order.")
-        stdscr.addstr(14, 10, "Press 'Q' to quit.")
+        stdscr.addstr(12, 10, "Press any key to reveal answer.")
+        stdscr.addstr(13, 10, "Press any key again for next card.")
+        stdscr.addstr(14, 10, "Press 'P' to go back.")
+        stdscr.addstr(15, 10, "Press 'M' to toggle Katakana/Romaji order.")
+        stdscr.addstr(16, 10, "Press 'Q' to quit.")
 
         stdscr.refresh()
 

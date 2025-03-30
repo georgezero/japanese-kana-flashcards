@@ -33,6 +33,7 @@ def flashcard_app(stdscr):
     index = 0
     show_answer = False
     show_hiragana_first = True
+    total = len(hiragana_list)
 
     while True:
         stdscr.clear()
@@ -51,11 +52,15 @@ def flashcard_app(stdscr):
             else:
                 stdscr.addstr(7, 10, "Hiragana: ", curses.A_DIM)
 
-        stdscr.addstr(10, 10, "Press any key to reveal answer.")
-        stdscr.addstr(11, 10, "Press any key again for next card.")
-        stdscr.addstr(12, 10, "Press 'P' to go back.")
-        stdscr.addstr(13, 10, "Press 'M' to toggle Hiragana/Romaji order.")
-        stdscr.addstr(14, 10, "Press 'Q' to quit.")
+        # Flashcard counter
+        stdscr.addstr(10, 10, f"Card {index + 1} of {total}")
+
+        # Instructions
+        stdscr.addstr(12, 10, "Press any key to reveal answer.")
+        stdscr.addstr(13, 10, "Press any key again for next card.")
+        stdscr.addstr(14, 10, "Press 'P' to go back.")
+        stdscr.addstr(15, 10, "Press 'M' to toggle Hiragana/Romaji order.")
+        stdscr.addstr(16, 10, "Press 'Q' to quit.")
 
         stdscr.refresh()
 
