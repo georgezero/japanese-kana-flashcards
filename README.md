@@ -2,7 +2,7 @@
 
 Learn kana using flashcards.  Each time you run, the script with select the flashcards in a random order. 
 
-Use `uv` or `python` to run.
+Use `uv` or `python` to run.  (Install [uv](https://docs.astral.sh/uv/getting-started/installation/))
 
 Hiragana:
 
@@ -40,4 +40,3 @@ uv run flashcards_zenbu.py sat_vocabulary.csv
 python flashcards_zenbu.py sat_vocabulary.csv
 ```
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/) here
