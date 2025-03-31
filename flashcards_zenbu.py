@@ -64,12 +64,12 @@ def flashcard_app(stdscr, flashcards):
             stdscr.addstr(5, 2, f"{back_label}: {back}", curses.A_BOLD)
             stdscr.addstr(7, 2, f"{front_label}: {front}" if show_answer else f"{front_label}: ", curses.A_BOLD if show_answer else curses.A_DIM)
 
-        stdscr.addstr(10, 2, f"Card {index + 1} of {total}")
-        stdscr.addstr(12, 2, "Press any key to reveal answer.")
-        stdscr.addstr(13, 2, "Press any key again for next card.")
-        stdscr.addstr(14, 2, "Press 'P' to go back.")
-        stdscr.addstr(15, 2, "Press 'M' to toggle front/back order.")
-        stdscr.addstr(16, 2, "Press 'Q' to quit.")
+        stdscr.addstr(15, 2, f"Card {index + 1} of {total}")
+        stdscr.addstr(17, 2, "Press any key to reveal answer.")
+        stdscr.addstr(18, 2, "Press any key again for next card.")
+        stdscr.addstr(19, 2, "Press 'P' to go back.")
+        stdscr.addstr(20, 2, "Press 'M' to toggle front/back order.")
+        stdscr.addstr(21, 2, "Press 'Q' to quit.")
         stdscr.refresh()
 
         key = stdscr.getch()
