@@ -2,18 +2,25 @@
 
 Learn kana using flashcards.  Each time you run, the script with select the flashcards in a random order. 
 
+Use `uv` or `python` to run.
 
-Use `uv` or `python` to run:
+Hiragana:
 
 ```sh
 uv run flashcards_hiragana.py
-
-python flashcards_hiragana.py
 ```
 
 ```sh
-uv run flashcards_katakana.py
+python flashcards_hiragana.py
+```
 
+Katakana:
+
+```sh
+uv run flashcards_katakana.py
+```
+
+```sh
 python flashcards_katakana.py
 ```
 
@@ -27,7 +34,9 @@ Create flashcards content in Google Sheets or Excel, and export as CSV.  First r
 
 ```sh
 uv run flashcards_zenbu.py sat_vocabulary.csv
+```
 
+```sh
 python flashcards_zenbu.py sat_vocabulary.csv
 ```
 
