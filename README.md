@@ -7,10 +7,14 @@ Use `uv` or `python` to run:
 
 ```sh
 uv run flashcards_hiragana.py
+
+python flashcards_hiragana.py
 ```
 
 ```sh
 uv run flashcards_katakana.py
+
+python flashcards_katakana.py
 ```
 
 --
@@ -23,6 +27,8 @@ Create flashcards content in Google Sheets or Excel, and export as CSV.  First r
 
 ```sh
 uv run flashcards_zenbu.py sat_vocabulary.csv
+
+python flashcards_zenbu.py sat_vocabulary.csv
 ```
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) here
