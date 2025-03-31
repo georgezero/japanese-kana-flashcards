@@ -1,6 +1,9 @@
 # japanese kana flashcards
 
-Help from ChatGPT
+Learn kana using flashcards.  Each time you run, the script with select the flashcards in a random order. 
+
+
+Use `uv` or `python` to run:
 
 ```sh
 uv run flashcards_hiragana.py
@@ -21,6 +24,5 @@ Create flashcards content in Google Sheets or Excel, and export as CSV.  First r
 ```sh
 uv run flashcards_zenbu.py sat_vocabulary.csv
 ```
-
 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) here
