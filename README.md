@@ -40,3 +40,15 @@ uv run flashcards_zenbu.py sat_vocabulary.csv
 python flashcards_zenbu.py sat_vocabulary.csv
 ```
 
+--
+
+Another script `flashcards_sukoshi.py` to run a random subset of the flashcards in csv, determined by `-n <number>`
+
+```sh
+uv run flashcards_sukoshi.py sat_vocabulary.csv -n 10
+```
+
+```sh
+python flashcards_sukoshi.py sat_vocabulary.csv -n 10
+```
+
